@@ -1,23 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Student Form</title>
+    <title>Login Page</title>
 </head>
-<body>
+<body style="text-align:center; font-family: Arial;">
 
-<h2>Student Information Form</h2>
+    <h2>Login Page</h2>
 
-<form action="StudentServlet" method="post">
-    
-    Name: <input type="text" name="name"><br><br>
-    
-    Roll No: <input type="text" name="roll"><br><br>
-    
-    Course: <input type="text" name="course"><br><br>
-
-    <input type="submit" value="Submit">
-
-</form>
+    <form action="LoginServlet" method="post">
+        <input type="text" name="username" placeholder="Enter Name" required><br><br>
+        <input type="submit" value="Login">
+    </form>
 
 </body>
 </html>
